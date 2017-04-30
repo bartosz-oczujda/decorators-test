@@ -1,8 +1,7 @@
 import { ReplaceTest } from "./ReplaceTest";
 
 function replacer<TFunction extends Function>(target: TFunction): TFunction {
-    let newConstructor = ReplaceTest.prototype.constructor
-    newConstructor.prototype = Object.create(ReplaceTest.prototype);
+    let newConstructor = <Function> ReplaceTest
     return <TFunction>newConstructor;
 }
 
