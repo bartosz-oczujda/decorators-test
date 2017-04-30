@@ -1,6 +1,6 @@
 import { replacer } from "./Decorator"
 
-@replacer
+//@replacer
 class Test {
     constructor() {
         console.log("Test");
