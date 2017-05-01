@@ -1,7 +1,7 @@
-import { ReplaceTest } from "./ReplaceTest";
+import { TestReplacer } from "./TestReplacer";
 
 function replacer<TFunction extends Function>(target: TFunction): TFunction {
-    let newConstructor = <Function> ReplaceTest
+    let newConstructor = <Function> TestReplacer
     return <TFunction>newConstructor;
 }
 

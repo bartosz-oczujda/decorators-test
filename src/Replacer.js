@@ -1,7 +1,8 @@
 import { Test } from "./Test";
+import { TestUser } from "./TestUser";
+
 import { ReplaceTest } from "./ReplaceTest";
 
-export function decorate() {
+export function replace() {
     Test = ReplaceTest;
-    //Test.prototype = Object.create(ReplaceTest.prototype);
 }
